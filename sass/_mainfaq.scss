@@ -1,0 +1,163 @@
+p{
+    margin: 0;
+}
+h1{
+    margin: 0;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+.banner{
+    background-image: url(../week3/qa.png);
+    background-position: center;
+    background-size: cover;
+    height: 304px;
+    display: flex;
+    justify-content: center;
+    @media screen and (max-width: 375px){
+        height: 143px;
+    }
+    .bannerwrap{
+        width: 100%;
+        max-width: 1200px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        @media screen and (max-width: 768px){
+            max-width: 672px;
+        }
+        @media screen and (max-width: 375px){
+            max-width: 352px;
+        }
+    }
+    .bannertitle{
+        font-size: $font-size*4;
+        line-height: $line-height;
+        margin-right: 10.1px;
+        @media screen and (max-width: 768px){
+            font-size: $font-size*3;
+        }
+        @media screen and (max-width: 375px){
+            font-size: $font-size*1.75;
+
+        }
+    }
+    .bannercontent{
+        width: 90px;
+        height: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media screen and (max-width: 768px){
+            width: 67px;
+            height: 67px;      
+        }
+        @media screen and (max-width: 375px){
+            width: 40px;
+            height: 40px;
+        }
+        .bannerimg{
+            width: 57.9px;
+            height: 57.9px;
+            background-image: url(../help-circle-sharp.svg);
+            background-position: center;
+            @media screen and (max-width: 768px){
+                width: 48px;
+                height: 48px;
+            }
+            @media screen and (max-width: 375px){
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+}
+.qa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .qatitle{
+        width: 100%;
+        max-width: 1200px;
+        justify-content: flex-start;
+        align-items: flex-end;
+        margin-top: 88px;
+        margin-bottom: $margin-base*0.4;
+        font-size: $font-size*2;
+        line-height: $line-height;
+        @media screen and (max-width: 768px){
+            max-width: 672px;
+            margin-top: 40px;
+            margin-bottom:$margin-base*0.8;
+            font-size: $font-size*1.75;
+        }
+        @media screen and (max-width: 375px){
+            max-width: 352px;
+            margin-top: 24px;
+            margin-bottom:$margin-base*0.4;
+            font-size: $font-size*1.25;
+        }
+
+    }
+    .qaul{
+        width: 100%;
+        max-width: 1200px;
+        margin-bottom: $margin-base*4-4px;
+        @media screen and (max-width: 768px){
+            max-width: 672px;
+            margin-bottom: $margin-base*2.6;
+        }
+        @media screen and (max-width: 375px){
+            max-width: 352px;
+            margin-bottom: $margin-base*1.4;
+        }
+        li{
+            border: 1px solid #000000;
+        }
+        .question{
+            height: 72px;
+            font-size: $font-size*1.25;
+            line-height: $line-height;
+            font-weight: $font-weight*1.25;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left:38px;
+            padding-right: 39px;
+            @media screen and (max-width: 768px){
+                font-size: $font-size;
+                padding-left: 24px;
+                padding-right: 24px;
+            }
+            @media screen and (max-width: 375px){
+                padding-left: 16px;
+                padding-right: 8px;
+            }
+        }
+        .answer{
+            height: 116px;
+            font-size: $font-size;
+            line-height: $line-height;
+            font-weight: $font-weight*0.75;
+            display: flex;
+            align-items: center;
+            padding-left: 38px;
+            @media screen and (max-width: 768px){
+                font-size: $font-size*0.875;
+                padding-left: 24px;
+                padding-right: 24px;
+            }
+            @media screen and (max-width: 375px){
+                padding-left: 16px;
+                padding-right: 16px;
+                height: 179px;
+            }
+        }
+        .dn{
+            display: none;
+        }
+    }
+   
+}
