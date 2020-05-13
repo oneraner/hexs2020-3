@@ -1,0 +1,244 @@
+ul li{
+    list-style: none;
+}
+//header
+.nav{
+    background-color: $first-color;
+    @media screen and (max-width:375px){
+        height: 50px;
+    }
+    .navflex{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 4.5%;
+        @media screen and (max-width:375px){
+            justify-content: center;
+            padding: 10px 0;
+        }
+        .navimg{
+            width: 80px;
+            margin-top: auto;
+            margin-bottom: auto;
+            @media screen and (max-width:375px){
+                width: 48px;
+            }
+        }
+        .navul{
+            display: flex;
+            justify-content: space-between;
+            font-size: $font-size*1.25;
+            line-height: $line-height;
+            font-weight: $font-weight*0.75;
+            width: 28%;
+            padding-left: 0;
+            margin: 40px 0;
+            @media screen and (max-width:768px) {
+                width: 57%;
+            }
+            @media screen and (max-width:375px) {
+                display: none;
+
+            }
+            a{
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+    }
+}
+
+//footer
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $first-color;
+    color: #fff;
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
+    ul{
+        padding-left: 0;
+        margin: 0;
+    }
+    .footer-topwrap{
+        width: 100%;
+        max-width: 1150px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: $margin-base*0.9;
+        margin-bottom: $margin-base*0.45;
+        @media screen and (max-width:768px){
+            width: 87.5%;
+        }
+        @media screen and (max-width:375px){
+            position: relative;
+            margin: 0 0 24px 0;
+        }
+    }
+    .footer-item{
+        display: flex;
+        justify-content: space-between;
+        width: 41%;
+        font-size: $font-size;
+        line-height: $line-height*0.98;
+        font-weight: $font-weight*0.75;
+        @media screen and (max-width:768px){
+            width: 60%;
+        }
+        @media screen and (max-width:375px){
+            display: none;
+        }
+    }
+    .footer-img{
+        display: flex;
+        justify-content: space-between;
+        width: 18%;
+        @media screen and (max-width:768px){
+            width: 25%;
+        }
+        @media screen and (max-width:375px){
+            position: absolute;
+            top: 0;
+            left: 60%;
+        }
+        .footer-liimg{
+            width: 48px;
+            height: 48px;
+            @media screen and (max-width:768px){
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+    .footer-telmail{
+        width: 100%;
+        max-width: 1150px;
+        border-bottom: 1px solid #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 21px;
+        margin-bottom: $margin-base*0.525;
+        @media screen and (max-width:768px){
+            width: 87.5%;
+        }
+        @media screen and (max-width:375px){
+            
+        }
+        p{
+            margin: 0;
+        }
+    }
+    .footer-tel{
+        font-family: 'Roboto', sans-serif;
+        font-size: $font-size*2.25;
+        line-height: $line-height*0.98;
+        font-weight: $font-weight*0.75;
+        margin-bottom: $margin-base*0.4;
+        @media screen and (max-width:768px){
+            font-size: $font-size*1.25;
+        }
+        @media screen and (max-width:375px){
+            font-size: $font-size;
+        }
+        .phoneimg{
+            width: 36px;
+            height: 36px;
+            margin-right: 23px;
+            @media screen and (max-width:768px){
+                width: 23px;
+                height: 23px;
+                margin-right: 12px;
+            }
+        }
+    }
+    .footer-mail{
+        font-family: 'Roboto', sans-serif;
+        font-size: $font-size*2.25;
+        line-height: $line-height*0.98;
+        font-weight: $font-weight*0.75;
+        @media screen and (max-width:768px){
+            font-size: $font-size*1.25;
+        }
+        @media screen and (max-width:375px){
+            font-size: $font-size;
+        }
+        .mailimg{
+            width: 48px;
+            height: 48px;
+            margin-right: 12px;
+            @media screen and (max-width:768px){
+                width: 23px;
+                height: 23px;
+                margin-right: 12px;
+            }
+        }
+    }
+    .footer-botwrap{
+        width: 100%;
+        max-width: 1150px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: $margin-base;
+        @media screen and (max-width:768px){
+            width: 87.5%;
+        }
+        @media screen and (max-width:375px){
+            position: relative;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: $margin-base*0.6;
+        }
+        p{
+            margin: 0;
+        }
+        .footer-classes{
+            margin-right: 38px;
+            @media screen and (max-width:768px){
+                display: none;
+            }
+            @media screen and (max-width:375px){
+                display: flex;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                margin-right: 0;
+
+            }
+        }
+        .footer-content{
+            display: flex;
+            align-items: center;
+            font-family: 'Roboto', sans-serif;
+            font-size: $font-size;
+            line-height: $line-height*0.98;
+            font-weight: $font-weight*0.75;
+            @media screen and (max-width:375px){
+                font-size: $font-size*0.875;
+                margin-bottom: $margin-base*0.2;
+            }
+        }
+        .footer-cotentlast{
+            font-family: 'Roboto', sans-serif;
+            font-size: $font-size*0.875;
+            line-height: $line-height*0.98;
+            font-weight: $font-weight*0.75;
+            @media screen and (max-width:375px){
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+        .footer-span{
+            margin-right: 62px;
+            @media screen and (max-width:375px){
+                margin-bottom: 8px;
+            }
+        }
+    }
+}
